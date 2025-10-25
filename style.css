@@ -1,0 +1,87 @@
+/* === General Page Styling === */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #cfe9ff, #e8f3ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Form Container === */
+.form-container {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+/* === Headings === */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #1a73e8;
+  font-size: 24px;
+}
+
+/* === Input Fields === */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #1a73e8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.4);
+}
+
+/* === Submit Button === */
+.form-container input[type="submit"],
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.form-container input[type="submit"]:hover,
+button:hover {
+  background-color: #155cb0;
+}
+
+/* === Links (Optional for Login/Register switching) === */
+.form-container a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive Design === */
+@media (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
